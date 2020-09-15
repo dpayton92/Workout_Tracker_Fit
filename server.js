@@ -19,8 +19,8 @@ mongoose.connect(MONGODB_URI, {
   useFindAndModify: false
 })
 
-app.use("/api", require("../Get-Fit-Workout-Tracker/routes/api.js"));
-app.use("/", require("../Get-Fit-Workout-Tracker/routes/html.js"));
+app.use("/api", require("../Workout_Tracker_Fit/routes/api.js"));
+app.use("/", require("../Workout_Tracker_Fit//routes/html.js"));
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
